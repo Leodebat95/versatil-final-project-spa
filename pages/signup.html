@@ -1,0 +1,60 @@
+<section id="signup-section">
+    <div id="signup-container">
+        <h1>ENVIE O SEU CADASTRO E FAÇA PARTE DA NOSSA EQUIPE </h1>
+
+        <form action="php/cadastro_b2b.php" method="post">
+            <label>
+                <span id="name">Nome:</span><input type="text" name="nome"/>
+            </label>
+
+            <label>
+                <span>Sobrenome:</span><input type="text" name="sobrenome"/>
+            </label>
+            <br>
+
+            <label>
+                <span id="cpf">CPF:</span><input type="text" name="cpf"/>
+            </label>
+
+            <label>
+                <span>Nascimento:</span><input type="text" name="nascimento"/>
+            <label>
+            <br>
+            
+            <h4>Já possui experiência no mercado?</h4>
+                <label>
+                    <input id="yes-radio" type="radio" name="franquia" value="sim"/> sim
+                </label>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+
+                <label>
+                    <input type="radio" name="franquia" value="não"/> não
+                </label>
+            
+            <label>
+                <h4>Qual das cidades de Brasília deseja atuar?</h4>
+                
+                <select name="cidade">
+                    <option selected="selected">-----Selecione a cidade-----</option>
+                    <option>Taguatinga</option>
+                    <option>Águas Claras</option>
+                    <option>Asa Norte</option>
+                    <option>Asa Sul</option>
+                    <option>Ceilândia</option>
+                    <option>Cruzeiro</option>
+                    <option>Sudoeste</option>
+                </select>
+            </label>
+            
+            <label>
+                <h4>Fale mais sobre os seus interesses:</h4>
+                <textarea name="falemais" cols="120" rows="8 "></textarea>
+            </label>
+            <br>
+            
+            <input type="submit" class="submit-btn" value="Cadastrar"/>
+        </form>
+    </div>
+</section>

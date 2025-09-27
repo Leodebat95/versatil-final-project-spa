@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+/* ------ Universal ----------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    min-width: 100%;
+    position: relative;
+
+    color: #002c62;
+}
+
+.main-page {
+    width: 100%;
+	min-height: 100%;
+}
+
+a {
+    font-size: 1.6rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+	color: #002c62;
+
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+img {
+    border: none;
+}
+
+.active {
+	color: #fdd000;
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../font/regular.ttf);
+}
+
+
+
+/* ------ Universal Semantic Items ----------------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    margin: 1.5rem 0;
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+
+    background: #0087ca; /* Old browsers */
+	background: -moz-linear-gradient(top, #0087ca 0%, #002c62 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0087ca 0%, #002c62 100%); /* Chrome10-25, Safari5.1-6 */
+	background: linear-gradient(to bottom, #0087ca 0%, #002c62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087ca', endColorstr='#002c62', GradientType=0); /* IE6-9 */
+}
+
+nav a {
+	font-family: Regular, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+	line-height: 5rem;
+
+	margin: 0 3.5rem;
+}
+
+nav a:hover {
+	color: #70cdff;
+}
+
+nav .active {
+	color: #fdd000;
+}
+
+footer {
+	width: 100%;
+	height: 14rem;
+    
+	bottom: 0;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1.2rem;
+
+	background: #0087ca; /* Old browsers */
+	background: -moz-linear-gradient(top, #0087ca 0%, #002c62 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0087ca 0%, #002c62 100%); /* Chrome10-25, Safari5.1-6 */
+	background: linear-gradient(to bottom, #0087ca 0%, #002c62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0087ca', endColorstr='#002c62', GradientType=0); /* IE6-9 */
+}
+
+#social-networks {
+    min-width: 20rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#social-networks a:first-child {
+    margin-right: 7px;
+}
+
+#social-networks a:hover {
+    opacity: 0.7;
+}
+
+#footer-text {
+    width:40rem;
+	color:#ffffff;
+}
+
+#footer-text p {
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+#footer-logo {
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ------ Index ----------------------------------------------------------------------- */
+#index-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#index-section-content {
+    width: 136rem;
+    margin: 4rem auto;
+
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+/* ------ About ----------------------------------------------------------------------- */
+#about-section {
+	width: 96rem;
+	margin: 5rem auto;
+}
+
+#about-section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.8rem;
+}
+
+#about-section p {
+	line-height: 2.8rem;
+	color: #002c62;
+}
+
+#about-section img {
+	float: right;
+	margin-left: 5rem;
+	border: #333333 1px solid;
+}
+
+
+
+/* ------ Contact Us ----------------------------------------------------------------------- */
+#contactus-section {
+	width: 96rem;
+	margin: 5rem auto;
+	position: relative;
+}
+
+#contactus-section h1 {
+    font-size: 2.4rem;
+}
+
+#contactus-section label {
+	font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+	color: #002c62;
+}
+
+#contactus-section input,
+#contactus-section textarea {
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+	color: #425469;
+
+    border: 1px solid #797979;
+    border-radius: 2px;
+}
+
+#contactus-section input {
+	width: 32rem;
+	padding: 0.8rem 1.2rem;
+
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+#contactus-section textarea {
+	width: 32rem;
+	height: 10rem;
+	padding: 1rem 1.4rem;
+    
+	margin-top: 1rem;
+	margin-bottom: 1.6rem;
+
+    resize: none;
+}
+
+#contactus-section .submit-btn {
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+	color: #ffffff;
+
+	width: 10rem;
+	padding: 1.2rem 2.4rem;
+    margin-bottom: 0;
+	background-color: #002c62;
+	border: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#contactus-section .submit-btn:hover {
+	background-color: #fdd000;
+	color: #002c62;
+
+    cursor: pointer;
+}
+
+#contactus-section input:focus,
+#contactus-section textarea:focus {
+	background-color: #f4fbff;
+    outline: 1px solid #fdd000;
+}
+
+#contactus-section iframe {
+	position: absolute;
+	top: 0.5rem;
+	left: 40rem;
+
+    border: none;
+}
+
+
+
+/* ------ Portfolio ----------------------------------------------------------------------- */
+#portfolio-section {
+	width: 96rem;
+	margin: 5rem auto;
+    text-align: center;
+}
+
+#portfolio-section h1 {
+    font-size: 2.4rem;
+}
+
+#portfolio-section .links img {
+    margin: 0 0.8rem 0.8rem 0;
+}
+
+
+
+/* ------ Sign Up ----------------------------------------------------------------------- */
+#signup-section {
+	width: 110rem;
+	margin: 5rem auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+#signup-section h1 {
+    font-size: 2.4rem;
+}
+
+#signup-section h4 {
+    font-size: 1.6rem;
+    margin: 1rem 0 0;
+}
+
+#signup-section span {
+    display: inline-block;
+    width: 10rem;
+}
+
+#signup-section #name,
+#signup-section #cpf {
+    width: 6rem;
+}
+
+#signup-section input[type="text"] {
+    margin-right: 3rem;
+}
+
+#signup-section label {
+	font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+	color: #002c62;
+}
+
+#signup-section input,
+#signup-section textarea,
+#signup-section select,
+#signup-section option {
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+	color: #425469;
+
+    border: 1px solid #797979;
+    border-radius: 2px;
+}
+
+#signup-section input,
+#signup-section select {
+    width: 32rem;
+    padding: 0.8rem 1.2rem;
+
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+#signup-section input[type="radio"] {
+    width: auto;
+    position: relative;
+    top: 2.5px;
+}
+
+#signup-section textarea {
+	width: 100%;
+	height: 10rem;
+	padding: 1rem 1.4rem;
+    
+	margin-top: 1rem;
+	margin-bottom: 1.6rem;
+
+    resize: none;
+}
+
+#signup-section #yes-radio,
+#signup-section select[name="cidade"],
+#signup-section textarea[name="falemais"] {
+    margin-top: 1.6rem;
+}
+
+#signup-section .submit-btn {
+    font-family: Regular, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+	color: #ffffff;
+
+	width: 12rem;
+	padding: 1.2rem 2.4rem;
+    margin-bottom: 0;
+	background-color: #002c62;
+	border: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#signup-section .submit-btn:hover {
+	background-color: #fdd000;
+	color: #002c62;
+
+    cursor: pointer;
+}
+
+#signup-section input:focus,
+#signup-section textarea:focus,
+#signup-section select:focus,
+#signup-section option:focus {
+	background-color: #f4fbff;
+    outline: 1px solid #fdd000;
+}

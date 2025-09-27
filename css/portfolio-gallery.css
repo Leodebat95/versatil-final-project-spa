@@ -1,0 +1,51 @@
+/* ------ Links (small imgs) ----------------------------------------------------------------- */
+.links img {
+	opacity: 0.8;
+	filter: grayscale(0.7);
+
+	transition: all 0.3s ease-in-out;
+}
+
+.links img:hover {
+	opacity: 1;
+	filter: grayscale(0);
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+}
+
+/* ------ Black Mask ----------------------------------------------------------------------- */
+#mask {
+	background-color: #000000;
+	display: none;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+/* ------ Window ----------------------------------------------------------------------- */
+.window {
+	width: 80rem;
+	display: none;
+
+	position: fixed;
+	z-index: 9998;
+	text-align: center;
+}
+
+/* ------ X Button ----------------------------------------------------------------------- */
+.close {
+	display: block;
+	margin-bottom: 5px;
+
+	font-family: Regular, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-align: right;
+	text-decoration: none;
+}
+
+.close span {
+	color: #ff0000;
+	font-weight: bold;
+}

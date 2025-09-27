@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/index-coin-slider.css">
+    <link type="text/css" rel="stylesheet" href="../css/portfolio-gallery.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./js/coin-slider.min.js" defer></script>
+    <script type="text/javascript" src="./js/slider-script.js" defer></script>
+    <script type="text/javascript" src="./js/modal-script.js" defer></script>
+    <script type="module" src="./js/main-script.js" defer></script>
+    
+    <title>Front-End SPA Project - Leonardo</title>
+</head>
+
+
+<body>
+    <div id="main-page">
+        <header>
+            <img src="./img/logo.png" width="275px" title="Front-End Development" alt="Front-End Development logo">
+        </header>
+
+        <nav>
+            <a id="nav-home" href="/" onclick="routeHome('/')" class="active">Home</a>
+            
+            <a id="nav-about" href="/about" onclick="routeAbout('/about')">Sobre</a>
+            
+            <a id="nav-signup" href="/signup" onclick="routeSignup('/signup')">Cadastro</a>
+            
+            <a id="nav-portfolio" href="/portfolio" onclick="routePortfolio('/portfolio')">Portfólio</a>
+            
+            <a id="nav-contactus" href="/contactus" onclick="routeContactus('/contactus')">Contato</a>
+        </nav>
+
+        <main></main>
+
+        <footer>
+            <div id="social-networks">
+                <a href="https://pt-br.facebook.com/" target="_blank" title="Facebook">
+                    <img src="img/facebook.png"/>
+                </a>
+
+                <a href="https://twitter.com/?lang=pt" target="_blank" title="Twitter">
+                    <img src="img/twitter.png"/>
+                </a>  
+            </div>
+
+            <div id="footer-text">
+                <p>
+                    Front-End Development
+                    <br>
+                    Todos os Direitos Reservados - <strong>Versátil Ti</strong>
+                </p>   
+            </div>
+
+            <div id="footer-logo">
+                <img src="img/logo2.png" height="50" title="Front-End Development" alt="Front-End Development logo"/>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
