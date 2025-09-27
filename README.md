@@ -1,6 +1,6 @@
 # Frontend SPA — Projeto Final | Final Project
 
-Projeto final do curso "Front-End Development", da escola de ensino em tecnologia [Versátil](https://versatilti.com.br/).<br>
+Projeto final do curso "Front-End Development", da escola de ensino em tecnologia [Versátil](https://versatilti.com.br/){:target="_blank"}.<br>
 Esse projeto foi feito utilizando o conceito de SPA (Single-Page Application).
 <br>—<br>
 Final project of the course "Front-End Development", from the technology school [Versatil](https://versatilti.com.br/).<br>
