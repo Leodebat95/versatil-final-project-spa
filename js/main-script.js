@@ -73,7 +73,15 @@ function handle() {
   
     fetch(route)
     .then(data => data.text())
-    .then(html => document.querySelector('main').innerHTML = html)
+    .then(html => {
+        document.querySelector('main').innerHTML = html
+
+        // O #slider só existe depois que o home.html é injetado aqui.
+        // Por isso o slider é inicializado neste ponto, e não no ready.
+        if (route === routes["/"]) {
+            initSlider()
+        }
+    })
 }
   
 handle()
