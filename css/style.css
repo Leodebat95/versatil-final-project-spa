@@ -54,7 +54,8 @@ img {
 
 @font-face {
     font-family: Regular;
-    src: url(../font/regular.ttf);
+    src: url(../assets/fonts/regular.ttf);
+    font-display: swap;
 }
 
 

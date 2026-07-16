@@ -77,12 +77,12 @@
     margin: 0 0 0 10px;
     width: 58px;
     height: 58px;
-    background-image: url(../assets/arrow_left.png);
+    background-image: url(../assets/img/arrow_left.png);
 }
 
 .cs-next {
     margin: 0 10px 0 0;
     width: 58px;
     height: 58px;
-    background-image: url(../assets/arrow_right.png);
+    background-image: url(../assets/img/arrow_right.png);
 }
